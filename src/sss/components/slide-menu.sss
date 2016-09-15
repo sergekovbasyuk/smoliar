@@ -26,19 +26,21 @@
   opacity: 1
   transition: opacity .3s
 
-.arrow_down
+.arrow-up, .arrow-down
   width: 18px
   position: absolute
-  right: 7px
   left: 7px
+  text-align: center
 
-.arrow_down:nth-child(1)
+.arrow-down
   top: 20px
 
-.arrow_down:nth-child(2)
-  transform: rotate(180deg)
+.arrow-up
   top: -20px
   bottom: 0
+
+  .arrow_down
+    transform: rotate(180deg)
 
 .facebook, .twitter
   color: #bebebe

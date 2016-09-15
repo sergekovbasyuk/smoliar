@@ -6,4 +6,18 @@ $(document).ready(function() {
       navigation: true,
       navigationPosition: 'right'
     });
+
+    $('.burger').on('click', function () {
+      $('.main-menu').addClass('is-open');
+    });
+
+    $('.arrow-up').on('click', function (e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSectionUp();
+    });
+
+    $('.arrow-down').on('click', function (e) {
+      e.preventDefault();
+      $.fn.fullpage.moveSectionDown();
+    });
 });
