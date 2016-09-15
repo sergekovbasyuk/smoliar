@@ -16,7 +16,7 @@ $(document).ready(function() {
       $.fn.fullpage.moveSectionUp();
     });
 
-    $('.arrow-down').on('click', function (e) {
+    $('.arrow-down, .link--scroll').on('click', function (e) {
       e.preventDefault();
       $.fn.fullpage.moveSectionDown();
     });
