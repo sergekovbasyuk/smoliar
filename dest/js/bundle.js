@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#fullpage").fullpage({menu:"#menu",anchors:["first","about","works","contact"],css3:!0,navigation:!0,navigationPosition:"right"})});

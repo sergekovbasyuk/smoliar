@@ -1,0 +1,75 @@
+doctype html
+html(lang='eng')
+  include ./includes/_head.jade
+  body
+    | <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    
+    include ./includes/_svg-sprite.jade
+    include ./includes/_mixins.jade
+    include ./includes/_header.jade
+    include ./includes/_menu.jade
+    
+    main.l-container#fullpage              
+      section.section(data-anchor='first')
+        h4.title ALEKSEY SMOLIAR
+        .section__content  
+          h1.section__title Hey, it's me Alex
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic commodi expedita voluptate, voluptatem labore, minima quo. Quisquam modi labore aspernatur provident fuga quasi corporis magnam cupiditate optio! Quaerat, consequatur, eum.
+        a.link--scroll(href="")
+          +icon('arrow-left')  
+          | Scroll down
+        span.cross--top 
+          +icon('cross')
+        span.cross--bottom.cross--right  
+          +icon('cross')
+        span.cross--bottom.cross--left    
+          +icon('cross')
+      section.section(data-anchor='about')
+        .section__content
+          h1.section__title About Me
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic commodi expedita voluptate, voluptatem labore, minima quo. Quisquam modi labore aspernatur provident fuga quasi corporis magnam cupiditate optio! Quaerat, consequatur, eum.
+        a.link--scroll(href="")
+          +icon('arrow-left')  
+          | Scroll down  
+        span.cross--top 
+          +icon('cross')
+        span.cross--bottom.cross--right  
+          +icon('cross')
+        span.cross--bottom.cross--left    
+          +icon('cross')
+      section.section(data-anchor='works')
+        .section__content
+          h1.section__title My Works
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic commodi expedita voluptate, voluptatem labore, minima quo. Quisquam modi labore aspernatur provident fuga quasi corporis magnam cupiditate optio! Quaerat, consequatur, eum.
+        a.link--scroll(href="")
+          +icon('arrow-left')  
+          | Scroll down  
+        span.cross--top 
+          +icon('cross')
+        span.cross--bottom.cross--right  
+          +icon('cross')
+        span.cross--bottom.cross--left    
+          +icon('cross')
+      section.section(data-anchor='contact')
+        .section__content.section__content--contact
+          h1.section__title Get in touch
+          p Hello. If you interested in contacting me, please drop me a line.
+          a.link--bold(href="mailto:alexei@smoliar.com") leave me a message
+        span.cross--top 
+          +icon('cross')
+        span.cross--bottom.cross--right  
+          +icon('cross')
+        span.cross--bottom.cross--left    
+          +icon('cross')
+        
+        footer.footer
+          ul.links
+            li.links__item
+              a.link(href="") Facebook
+            li.links__item
+              a.link(href="") Twitter
+            li.links__item
+              a.link(href="") IMDb   
+          a.link--mail(href="mailto:alexei@smoliar.com") alexei@smoliar.com     
+      
+    include ./includes/_footer.jade
