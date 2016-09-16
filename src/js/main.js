@@ -3,8 +3,8 @@ $(document).ready(function() {
       menu: '#menu',
       anchors:['first', 'about', 'works', 'contact'],
       css3: true,
-      navigation: true,
-      navigationPosition: 'right'
+      slidesNavigation: true,
+      slidesNavPosition: 'bottom'
     });
 
     $('.burger').on('click', function () {

@@ -8,11 +8,23 @@
 #fp-nav ul li
   margin: 10px
 
-#fp-nav ul li a span
+#fp-nav ul li a span, #fp-nav ul li a span, .fp-slidesNav ul li a span
   border-radius: 0
   background: none
   margin: 0
   display: inline-block
+  position: relative
+  width: 13px
+  height: 13px
+
+#fp-nav ul li a span, #fp-nav ul li a span:after, .fp-slidesNav ul li a span:after
+  content: ''
+  background-image: url('../img/square.svg')
+  position: absolute
+  top: -3px
+  left: -3px
+  right: -3px
+  bottom: -3px
 
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span
   border-radius: 0
@@ -24,3 +36,18 @@
 #fp-nav ul li a.active span:hover, #fp-nav ul li a span:hover, #fp-nav ul li a.active span, #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span
   border-radius: 0
   margin: 0
+
+.fp-section, .fp-slide
+  visibility: hidden
+  opacity: 0
+  z-index: 0
+  transition: all .7s ease-in-out
+
+
+.fp-section.active, .fp-slide.active
+  visibility: visible
+  opacity: 1
+  z-index: 1
+
+.fp-controlArrow
+  display: none
