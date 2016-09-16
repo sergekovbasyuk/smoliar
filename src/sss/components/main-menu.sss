@@ -12,7 +12,6 @@
 .main-menu.is-open
   transform: translateY(0)
 
-
 .main-menu__inner
   position: absolute
   top: 50%
@@ -34,4 +33,15 @@
   margin-right: -25px
   margin-bottom: .5em
 
-.main-menu__link
+.burger:hover, .burger:focus
+  color: inherit    
+
+.close-icon
+  position: absolute
+  top: var(--spacing)
+  left: var(--spacing)
+  cursor: pointer
+
+  @media(min-width: 768px)
+    top: var(--spacing-double)
+    left: var(--spacing-double)

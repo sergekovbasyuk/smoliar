@@ -16,8 +16,10 @@
   position: relative
   width: 13px
   height: 13px
+  left: 0
+  top: 0
 
-#fp-nav ul li a span, #fp-nav ul li a span:after, .fp-slidesNav ul li a span:after
+#fp-nav ul li a span:after, #fp-nav ul li a span:after, .fp-slidesNav ul li a span:after
   content: ''
   background-image: url('../img/square.svg')
   position: absolute
@@ -32,6 +34,7 @@
   margin: 0
   width: 13px
   height: 13px
+
 
 #fp-nav ul li a.active span:hover, #fp-nav ul li a span:hover, #fp-nav ul li a.active span, #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span
   border-radius: 0
@@ -51,3 +54,9 @@
 
 .fp-controlArrow
   display: none
+
+.fp-slidesNav.bottom
+  bottom: 19px
+
+  @media(min-width: 768px)
+    bottom: 36px

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    var burger = $('.burger'),
+        mainMenu = $('.main-menu');
+
     $('#fullpage').fullpage({
       menu: '#menu',
       anchors:['first', 'about', 'works', 'contact'],
@@ -7,8 +10,14 @@ $(document).ready(function() {
       slidesNavPosition: 'bottom'
     });
 
-    $('.burger').on('click', function () {
-      $('.main-menu').addClass('is-open');
+    burger.on('click', function () {
+      mainMenu.addClass('is-open');
+      burger.hide();
+    });
+
+    $('.close-icon').on('click', function () {
+      mainMenu.removeClass('is-open');
+      burger.show();
     });
 
     $('.arrow-up').on('click', function (e) {
