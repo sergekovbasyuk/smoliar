@@ -15,7 +15,7 @@ $(document).ready(function() {
       burger.hide();
     });
 
-    $('.close-icon').on('click', function () {
+    $('.close-icon, .main-menu__link').on('click', function () {
       mainMenu.removeClass('is-open');
       burger.show();
     });
