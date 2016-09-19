@@ -1,15 +1,17 @@
 .title
-  text-transform: uppercase
   position: absolute
   top: 22px
   left: 0
   margin: 0
   text-align: center
   width: 100%
-  color: #fff
 
   @media(min-width: 768px)
     top: 44px
+
+.logo
+  fill: #fff
+  max-width: 250px;
 
 .section, .slide
   position: relative
@@ -23,6 +25,10 @@
     padding: 0 0 0 140px
     max-width: 70%
 
+.section__content p
+  max-width: 590px
+  margin: 0;
+
 .section__content--contact
   @media(min-width: 768px)
     padding: 0 180px
@@ -31,12 +37,10 @@
     margin: 0 auto
 
   @media(min-width: 1024px)
-    padding: 0 380px
-
+    padding: 0 360px
 
     .section__title
       text-align: center
-
 
 .section:nth-child(1)
   background-image: url('../img/bg1.jpg')
@@ -44,15 +48,30 @@
 .section:nth-child(2)
   background-image: url('../img/bg2.jpg')
 
-.section:nth-child(3)
+.slide:nth-child(1)
   background-image: url('../img/bg3.jpg')
+
+.slide:nth-child(2)
+  background-image: url('../img/work1.jpg')
+
+.slide:nth-child(3)
+  background-image: url('../img/work2.jpg')
+
+.slide:nth-child(4)
+  background-image: url('../img/work3.jpg')
+
+.slide:nth-child(5)
+  background-image: url('../img/work4.jpg')
 
 .section__title
   color: var(--c-secondary)
   font-size: 26px
   margin-right: -20px
   margin-top: 0
+  margin-bottom: 20px
   line-height: 1
+  font-family: 'Lato', sans-serif
+  font-weight: 900
 
   @media(min-width: 768px)
     font-size: 38px
