@@ -8,13 +8,17 @@
   font-size: 12px
   display: flex
   justify-content: center
+  flex-direction: column
+  color: #fff;
 
 
   @media(min-width: 768px)
     bottom: 36px
+    left: 40px;
+    right: 40px;
     text-align: left
-    padding: 0 85px
     justify-content: space-between
+    flex-direction: row
 
 .links
   display: inline-block
@@ -26,7 +30,4 @@
   margin-left: 20px
 
 .link--mail
-  display: none
-
-  @media(min-width: 768px)
-    display: inline-block
+  display: inline-block

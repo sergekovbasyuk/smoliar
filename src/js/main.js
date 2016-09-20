@@ -7,7 +7,13 @@ $(document).ready(function() {
       anchors:['first', 'about', 'works', 'contact'],
       css3: true,
       slidesNavigation: true,
-      slidesNavPosition: 'bottom'
+      slidesNavPosition: 'bottom',
+      afterRender: function(){
+				$('video').get(0).play();
+			},
+      afterLoad: function(){
+        $('video').get(0).play();
+      }
     });
 
     burger.on('click', function () {

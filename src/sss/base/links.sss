@@ -11,11 +11,15 @@ a
 .link--bold
   color: #fff
   font-weight: bold
-  font-size: 22px
+  font-size: 18px
   position: relative
   display: inline-block
   font-family: 'Lato', sans-serif
   margin-top: 50px;
+  z-index: 2;
+
+  @media(min-width: 768px)
+    font-size: 22px
 
 .link--bold:hover
   color: inherit
@@ -30,8 +34,3 @@ a
   display: block
   background: #1287f4
   z-index: -1
-  /*transform: scale(.001)
-  transition: transform .3s
-
-.link--bold:hover:before
-  transform: scale(1)*/
